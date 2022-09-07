@@ -9,7 +9,7 @@ const valueUSDfetch = fetch("https://economia.awesomeapi.com.br/json/last/USD-BR
 
 
 function converter() {
-  let inputNumber = parseFloat(document.getElementById("valor").value);
+  let inputNumber = parseFloat(document.getElementById("moeda").value);
   inputNumber < 0 ? inputNumber = 0 : inputNumber;
 
   const account = (inputNumber / quotationUSD).toFixed(2);
