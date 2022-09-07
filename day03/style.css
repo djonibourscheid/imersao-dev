@@ -1,0 +1,101 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  color: white;
+
+  min-height: 60rem;
+
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png") center bottom /cover no-repeat #000;
+}
+
+.page-logo {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 10rem;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin: 0 0 .5rem;
+}
+
+.page-subtitle {
+  margin-top: .5rem;
+}
+
+.container > *,
+.inputNumbers > label {
+  text-shadow: 0 0 .15rem rgba(0, 0, 0, 0.7);
+}
+
+.inputNumbers {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  width: 60%;
+  margin: 1rem auto 0;
+  padding: 2rem;
+}
+
+.inputNumbers input,
+.inputNumbers button {
+  padding: .4rem .8rem;
+  width: 60%;
+  font-size: 1.4rem;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: .5rem;
+  border: none;
+}
+
+.inputNumbers input {
+  margin: .5rem auto;
+}
+
+.inputNumbers button {
+  margin: 1rem auto;
+
+}
+
+#result {
+  font-size: 2.4rem;
+}
+
+
+
+/* Responsividade */
+/* 1024px */
+@media (max-width: 64rem) {
+  .inputNumbers {
+    width: 100%;
+  }
+}
+
+/* 768 */
+@media (max-width: 48rem) {
+  .page-logo {
+    top: auto;
+    bottom: 1.5rem;
+  }
+
+  .container {
+    width: 85%;
+  }
+}
