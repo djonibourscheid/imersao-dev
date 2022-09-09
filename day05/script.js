@@ -7,6 +7,19 @@ function addNewFilm() {
 
 
   // Criando o card
+  const newCard = createNewCard(filmName, filmImg);
+
+  // Adicionando a imagem na tela
+  addCardInWrapper(newCard);
+
+
+  // Limpar campo depois de tudo
+  filmNameInput.value = "";
+  filmImgInput.value = "";
+}
+
+
+function createNewCard(filmName, filmImg) {
   const newCardEl = document.createElement("div");
   newCardEl.className = "card";
 
@@ -27,14 +40,11 @@ function addNewFilm() {
 
   newCardEl.appendChild(pEl);
 
+  return newCardEl;
+}
 
-  // Adicionando a imagem na tela
+function addCardInWrapper(newCard) {
   const filmsListWrapperEl = document.getElementById("filmsList");
 
-  filmsListWrapperEl.appendChild(newCardEl);
-
-
-  // Limpar campo depois de tudo
-  filmNameInput.value = "";
-  filmImgInput.value = "";
+  filmsListWrapperEl.appendChild(newCard);
 }
