@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia 05 - AluraFlix 2.0</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+    alt="Imersão Dev">
+
+  <div class="container">
+    <h1 class="page-title">Aluraflix</h1>
+    <p class="page-subtitle">Qual seu filme favorito?</p>
+
+    <div class="form-wrapper">
+      <label for="filmName">Insira o nome do filme:</label>
+      <input type="text" name="filmName" id="filmName" placeholder="Vingadores: Ultimato">
+
+      <label for="filmImg">Insira endereço de imagem:</label>
+      <input type="text" id="filmImg" name="filmImg" placeholder="https://...">
+
+      <button onClick="addNewFilm()">Adicionar Filme</button>
+    </div>
+
+
+    <div id="filmsList"></div>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
