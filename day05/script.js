@@ -6,16 +6,35 @@ function addNewFilm() {
   const filmImg = filmImgInput.value.trim();
 
 
-  // Criando o card
-  const newCard = createNewCard(filmName, filmImg);
-
-  // Adicionando a imagem na tela
-  addCardInWrapper(newCard);
-
-
   // Limpar campo depois de tudo
   filmNameInput.value = "";
   filmImgInput.value = "";
+
+
+  // Validando as entradas
+  if (filmName === "" || filmImg === "") {
+    return showErrorMessage("Preencha os campos corretamente.");
+  }
+
+  const filmUrlValid =
+    filmImg.endsWith(".jpg") ||
+    filmImg.endsWith(".png") ||
+    filmImg.includes("gstatic.com");
+
+  if (!filmUrlValid) {
+    return showErrorMessage("Imagem não válida. Por favor selecione outra.");
+  }
+
+
+  // Se tudo der certo:
+  // Remove a mensagem de erro
+  showErrorMessage("");
+
+  // Cria o card
+  const newCard = createNewCard(filmName, filmImg);
+
+  // Adiciona o card na tela
+  return addCardInWrapper(newCard);
 }
 
 
@@ -47,4 +66,9 @@ function addCardInWrapper(newCard) {
   const filmsListWrapperEl = document.getElementById("filmsList");
 
   filmsListWrapperEl.appendChild(newCard);
+}
+
+function showErrorMessage(message) {
+  const errorMessageEl = document.querySelector(".errorMessage");
+  errorMessageEl.innerText = message;
 }

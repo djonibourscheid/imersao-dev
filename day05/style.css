@@ -79,6 +79,10 @@ body {
   opacity: 0.8;
 }
 
+/* Error message */
+.errorMessage {
+  margin-top: 1.5rem;
+}
 
 /* List of films */
 #filmsList {
