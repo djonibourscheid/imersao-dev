@@ -1,0 +1,55 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+
+  min-height: 40rem;
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png") center /100% no-repeat #111;
+}
+
+.container {
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+
+/* Table */
+table {
+  border: 0.2rem solid white;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+tr,
+td {
+  border: 0.1rem solid white;
+  color: white;
+  padding: 0.25rem;
+}
+
+
+button {
+  border: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
