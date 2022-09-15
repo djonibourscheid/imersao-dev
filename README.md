@@ -12,7 +12,7 @@
 </p>
 
 <h4 align="center">
-	🚧 Em construção... 🏗 50% 🚧
+	🚧 Em construção... 🏗 60% 🚧
 </h4>
 
 
@@ -37,12 +37,23 @@
       - Percorer o array com `for` para mostrar os dados em tela
       - *Desafio:*
         - Utilizar o `forEach()`
+        - Utilizar um objeto para guardar os valores
 
   - Aula 5
     - Utilizar o `.endsWith()` e `.includes()` para validar as imagens recebidas
     - *Desafio:*
       - Estrutura mais complexa dos dados, com nome e url da imagem (JSON)
+      - Utilizar um objeto para guardar os valores
 
+  - Aula 6
+    - HTML dinâmico com JavaScript exibindo o objeto na página
+    - Utilizar um objeto para guardar os valores
+    - Recalcular pontos a cada alteração
+    - *Desafio:*
+      - Validar se todos os pontos estão fazendo sentido
+      - Adicionar empates na dupla que empatou
+      - Botão para zerar todos os pontos
+      - Usuário poder adicionar novos jogadores, com seus respectivos dados
 
 ## 💻 Tarefas
 - [ ] Todos as aulas completas
