@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia 07 - SuperTrunfo - Lógica do jogo</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+    alt="Imersão Dev">
+
+  <div class="container">
+    <h1 class="page-title">Super Trunfo</h1>
+
+    <button onclick="drawCard()" id="btnDrawCard">Sortear carta</button>
+
+    <form id="form">
+      <h2>Escolha o seu atributo</h2>
+
+      <div class="options" id="options"></div>
+
+      <button type="button" id="btnPlay" onclick="play()" disabled>Jogar</button>
+
+      <div id="result"></div>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

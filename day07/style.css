@@ -1,0 +1,73 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  color: white;
+
+  min-height: 85.4rem;
+
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /cover no-repeat #000;
+  padding-bottom: 20vh;
+}
+
+.page-logo {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 10rem;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin: 0 0 .5rem;
+}
+
+button {
+  padding: 1.3rem 2.4rem;
+  margin: 1.6rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.6rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+button:not(:disabled):hover {
+  background-color: #d4d4d4;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+#options div {
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-transform: capitalize;
+}
