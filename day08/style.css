@@ -1,0 +1,136 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  color: white;
+
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /cover no-repeat #000;
+}
+
+.page-logo {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 10rem;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin: 0;
+}
+
+button {
+  padding: 1.3rem 2.4rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.6rem;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+button:not(:disabled):hover {
+  background-color: #d4d4d4;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cardWrapper .card {
+  width: 36rem;
+  height: 50rem;
+
+  overflow: auto;
+
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  background: 1.25rem 5rem / 34rem 23rem no-repeat;
+}
+
+.subtitle-card {
+  z-index: 2;
+  position: absolute;
+  top: 3.25rem;
+  left: 3.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+}
+
+.status-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: .5rem;
+
+  height: 15.5rem;
+  margin: 3.2rem;
+  color: white;
+  z-index: 2;
+}
+
+.card:nth-child(2) .status-card div{
+  margin-left: 2rem;
+}
+
+.status-card div {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.status-card input {
+  margin: 0 1rem;
+}
+
+.status-card p {
+  margin-bottom: 3.2rem;
+}
+
+.final-result {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 1.6rem;
+  border: 0.2rem solid black;
+  background-color: black;
+}
+
+#btnPlay {
+  margin: 0;
+}
