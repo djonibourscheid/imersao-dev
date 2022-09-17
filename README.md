@@ -12,7 +12,7 @@
 </p>
 
 <h4 align="center">
-	🚧 Em construção... 🏗 60% 🚧
+	🚧 Em construção... 🏗 70% 🚧
 </h4>
 
 
@@ -54,6 +54,11 @@
       - Adicionar empates na dupla que empatou
       - Botão para zerar todos os pontos
       - Usuário poder adicionar novos jogadores, com seus respectivos dados
+
+  - Aula 7
+    - Sortear uma carta para o jogador e outra para a máquina
+    - Obter o atribudo escolhido pelo jogador e comparar com a carta da máquina
+    - Comparar o atributo de ambas as cartas e definir um vencedor
 
 ## 💻 Tarefas
 - [ ] Todos as aulas completas
