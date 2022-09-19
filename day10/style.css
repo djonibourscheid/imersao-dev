@@ -16,13 +16,6 @@ body.dark::-webkit-scrollbar-thumb {
   background-color: #041832;
 }
 
-body,
-.container,
-header {
-  -webkit-transition: color 0.3s ease 0s, background-image 0.3s ease 0s;
-  transition: color 0.3s ease 0s, background-image 0.3s ease 0s;
-}
-
 body {
   background: #041832 linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
 
@@ -191,7 +184,7 @@ body.dark header {
   font-size: 2.5rem;
   color: #204776;
   text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.2s ease-in-out;
+  transition: text-shadow 0.2s ease-in-out;
 }
 
 body.dark .social {
