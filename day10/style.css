@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+body,
+.container,
+header {
+  -webkit-transition: color 0.3s ease 0s, background 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background 0.3s ease 0s;
+}
 
 body {
   background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
@@ -20,6 +26,10 @@ body {
 
   display: flex;
   min-height: 100vh;
+}
+
+body.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
 }
 
 .container {
@@ -36,12 +46,102 @@ body {
   gap: 4.5rem;
 }
 
+body.dark .container {
+  background-color: #041832;
+}
+
+
+/* THEME TOGGLE */
+#toggle-theme {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: block;
+
+  color: rgb(248, 248, 242);
+  background: transparent;
+  cursor: pointer;
+
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+
+  border: none;
+  border-radius: 50%;
+
+  perspective: 1000px;
+}
+
+/* rotateY fixed in 0deg  */
+.flipper {
+  width: 100%;
+  height: 100%;
+
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s linear;
+}
+
+/* when button:hover on light theme, rotateY goes 180deg */
+#toggle-theme.light:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/* if clicked, fixed rotateY by 180deg */
+#toggle-theme.dark .flipper {
+  transform: rotateY(180deg);
+}
+
+/* when button:hover on dark theme, rotateY goes 0deg, and looping... */
+#toggle-theme.dark:hover .flipper {
+  transform: rotateY(0deg);
+}
+
+.flipper span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+  font-size: 2.25rem;
+
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  backface-visibility: hidden;
+  transition: all 0.25s ease 0s;
+}
+
+#toggle-theme .dark-icon {
+  transform: rotateY(180deg);
+}
+
+/* background change */
+#toggle-theme:hover .light-icon {
+  background: rgb(135, 206, 235);
+  color: rgb(249, 215, 28);
+}
+
+#toggle-theme:hover .dark-icon {
+  background: rgb(32, 71, 118);
+  color: rgb(244, 241, 201);
+}
+
 
 /* HEADER */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+body.dark header {
+  color: #F6F6F6;
 }
 
 .profile {
@@ -83,11 +183,19 @@ header {
   font-size: 2.5rem;
   color: #204776;
   text-decoration: none;
-  transition: text-shadow 0.2s ease-in-out;
+  transition: color 0.3s ease, text-shadow 0.2s ease-in-out;
+}
+
+body.dark .social {
+  color: #F6F6F6;
 }
 
 .social:hover {
   text-shadow: 0 0 2rem #204776bb;
+}
+
+body.dark .social:hover {
+  text-shadow: 0 0 2rem #8abfff;
 }
 
 
