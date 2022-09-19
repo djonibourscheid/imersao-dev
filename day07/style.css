@@ -13,10 +13,7 @@ body {
   font-size: 1.6rem;
   color: white;
 
-  min-height: 85.4rem;
-
   background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /cover no-repeat #000;
-  padding-bottom: 20vh;
 }
 
 .page-logo {
