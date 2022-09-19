@@ -12,7 +12,7 @@
 </p>
 
 <h4 align="center">
-	🚧 Em construção... 🏗 70% 🚧
+	🚧 Em construção... 🏗 80% 🚧
 </h4>
 
 
@@ -59,6 +59,16 @@
     - Sortear uma carta para o jogador e outra para a máquina
     - Obter o atribudo escolhido pelo jogador e comparar com a carta da máquina
     - Comparar o atributo de ambas as cartas e definir um vencedor
+
+  - Aula 8
+      - Desenvolver um sistema em que a cada carta que um jogador ganhe, ele fique com a carta do oponente e vice-versa
+      - Transformar as funções `exibirCartaMaquina()` e `exibirCartaJogador()` em apenas uma, chamada `exibirCarta()`, utilizando para isso a passagem de parâmetros
+
+  - Aula 9
+    - Aprender mais sobre HTML e CSS
+    - Aprender a mexer no figma e transformar o design em código
+    - *Desafio:*
+      - Terminar todo o design que está no figma
 
 ## 💻 Tarefas
 - [ ] Todos as aulas completas
