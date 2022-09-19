@@ -12,8 +12,11 @@
 </p>
 
 <h4 align="center">
-	🚧 Em construção... 🏗 90% 🚧
+  ✅ Projetos concluídos ✅
 </h4>
+<p align="center">
+🚧 Desafios em desenvolvimento... 🏗 50% 🚧
+</p>
 
 
 ## 🎯 Objetivo
@@ -76,9 +79,14 @@
     - *Desafio:*
       - Terminar todo o design que está no figma
 
+  - Aula 10
+    - Criar o tema claro e escuro para o projeto
+    - Fazer a lógica em Javascript para alterar entre os temas
+
 ## 💻 Tarefas
-- [ ] Todos as aulas completas
-- [ ] Documentar todas as aulas
+- [x] Todos as aulas completas
+- [x] Documentar todas as aulas
+- [ ] Fazer os desafios
 
 ## 🛠 Tecnologias
 Foram usadas na construção do projeto:
@@ -88,7 +96,7 @@ Foram usadas na construção do projeto:
 
 ## 👋 Autor
 <a href="https://github.com/djonibourscheid">
-  <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/62856037?v=4" width="100px">
+  <img style="border-radius: 100px" src="https://avatars.githubusercontent.com/u/62856037?v=4" width="100px">
 
   <sub><b>Djoni Bourscheid</b></sub>
 </a>
