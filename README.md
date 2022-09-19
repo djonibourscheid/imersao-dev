@@ -12,7 +12,7 @@
 </p>
 
 <h4 align="center">
-	🚧 Em construção... 🏗 80% 🚧
+	🚧 Em construção... 🏗 90% 🚧
 </h4>
 
 
@@ -61,6 +61,12 @@
     - Comparar o atributo de ambas as cartas e definir um vencedor
 
   - Aula 8
+    - Campo imagem nos objetos com o caminho da imagem
+    - Função que exibe as cartas após o sorteio das cartas
+    - Exibir a moldura da carta, os atributos e pontos da carta da máquina
+    - Escrever o resultado na tela após o duelo das cartas informando se o jogador venceu, perdeu ou empatou
+    - *Desafio:*
+      - Criar um baralho de cartas
       - Desenvolver um sistema em que a cada carta que um jogador ganhe, ele fique com a carta do oponente e vice-versa
       - Transformar as funções `exibirCartaMaquina()` e `exibirCartaJogador()` em apenas uma, chamada `exibirCarta()`, utilizando para isso a passagem de parâmetros
 
