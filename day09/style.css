@@ -12,7 +12,7 @@
 }
 
 body {
-  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
+  background: #041832 linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
 
   font-family: 'Roboto', sans-serif;
   color: var(--text-black-primary);

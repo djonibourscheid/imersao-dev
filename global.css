@@ -1,0 +1,22 @@
+/* Firefox */
+body {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(100, 100, 100) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100);
+  cursor: move;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}

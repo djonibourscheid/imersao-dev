@@ -11,15 +11,20 @@
   box-sizing: border-box;
 }
 
+/* SCROLL */
+body.dark::-webkit-scrollbar-thumb {
+  background-color: #041832;
+}
+
 body,
 .container,
 header {
-  -webkit-transition: color 0.3s ease 0s, background 0.3s ease 0s;
-  transition: color 0.3s ease 0s, background 0.3s ease 0s;
+  -webkit-transition: color 0.3s ease 0s, background-image 0.3s ease 0s;
+  transition: color 0.3s ease 0s, background-image 0.3s ease 0s;
 }
 
 body {
-  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
+  background: #041832 linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
 
   font-family: 'Roboto', sans-serif;
   color: var(--text-black-primary);
@@ -29,7 +34,10 @@ body {
 }
 
 body.dark {
-  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+  background: #375B86 linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+
+  /* SCROLL */
+  scrollbar-color: #041832 transparent;
 }
 
 .container {
