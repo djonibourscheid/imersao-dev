@@ -1,0 +1,144 @@
+/* GLOBAL */
+:root {
+  font-size: 62.5%;
+
+  --text-black-primary: #1C1C1C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%) no-repeat center/cover;
+
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-black-primary);
+
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ECF4FF;
+  box-shadow: 0.6rem 0.6rem 0.6rem #0E1D2F;
+  border-radius: 2rem;
+
+  width: 80%;
+  margin: 2rem auto;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.profile img {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  box-shadow: 0.4rem 0.4rem 0.4rem #00000040;
+}
+
+.profile-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.profile-infos h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.profile-infos h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social {
+  font-size: 2.5rem;
+  color: #204776;
+  text-decoration: none;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.social:hover {
+  text-shadow: 0 0 2rem #9CC8FC;
+}
+
+
+/* MAIN */
+.projects {
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%) no-repeat center/cover;
+  box-shadow: 0.2rem 0.2rem 0.4rem #1010106B;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+.social-medias h2,
+.projects h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+
+  margin-bottom: 2rem;
+}
+
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul ul {
+  margin: .25rem 0 0 2.5rem;
+}
+
+.projects ul li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.projects ul li span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.projects li a {
+  color: var(--text-black-primary);
+  text-decoration: none;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.projects li a:hover {
+  text-shadow: 0 0 1rem #ffffffbb;
+}
