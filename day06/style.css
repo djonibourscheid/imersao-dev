@@ -14,8 +14,7 @@ body {
   color: white;
   text-align: center;
 
-  min-height: 40rem;
-  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png") center /100% no-repeat #111;
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png") center /125% no-repeat #111;
 }
 
 .container {
@@ -24,8 +23,15 @@ body {
   width: 90%;
 }
 
+h1 {
+  margin: 2rem 0;
+}
 
 /* Table */
+.table-container {
+  overflow-x: auto;
+}
+
 table {
   border: 0.2rem solid white;
   border-collapse: collapse;
@@ -52,4 +58,19 @@ button {
 
 button:hover {
   background-color: #d4d4d4;
+}
+
+
+/* RESPONSIVE */
+/* 768px */
+@media (max-width:48rem) {
+  body {
+    background-position: bottom;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
 }

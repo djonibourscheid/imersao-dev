@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
   color: white;
 
-  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /cover no-repeat #000;
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /100% no-repeat #000;
 }
 
 .page-logo {
@@ -26,7 +26,6 @@ body {
 .container {
   text-align: center;
   padding: 2rem;
-  height: 100vh;
   width: 60%;
   margin: 0 auto;
 }
@@ -67,4 +66,29 @@ button:not(:disabled):hover {
   justify-content: space-between;
   gap: 1rem;
   text-transform: capitalize;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#result span {
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+/* 500px */
+@media (max-width: 31.25rem) {
+  .page-logo {
+    top: auto;
+    bottom: 1.5rem;
+  }
+
+  .container {
+    width: 85%;
+  }
 }

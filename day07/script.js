@@ -28,6 +28,9 @@ const cards = [
 let playerCard, botCard;
 
 function drawCard() {
+  // Limpar o resultado da partida anterior
+  document.getElementById("result").innerText = "";
+
   const numCardBot = parseInt(Math.random() * cards.length);
   let numCardPlayer;
 
@@ -74,12 +77,18 @@ function play() {
   const resultEl = document.getElementById("result");
 
   if (playerCardValue > botCardValue) {
-    resultEl.innerText = "Você venceu!";
+    resultEl.innerHTML = "<p><span>Você venceu!</span></p>";
   } else if (playerCardValue < botCardValue) {
-    resultEl.innerText = "Você perdeu, a carta da máquina é maior.";
+    resultEl.innerHTML = "<p><span>Você perdeu</span>, a carta da máquina é maior.</p>";
   } else {
-    resultEl.innerText = "Empatou.";
+    resultEl.innerHTML = "<p><span>Empatou.</span></p>";
   }
 
-  resultEl.innerText += `\n Seu atributo: ${playerCardValue} \n Atributo da máquina: ${botCardValue} \n A carta da máquina era ${botCard.name}`;
+  resultEl.innerHTML += `
+  <p>Seu atributo: <span>${playerCardValue}</span></p>
+  <p>Atributo da máquina: <span>${botCardValue}</span></p>
+  <p>A carta da máquina era: <span>${botCard.name}</span></p>`;
+
+  document.getElementById("btnDrawCard").disabled = false;
+  document.getElementById("btnPlay").disabled = true;
 }
