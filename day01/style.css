@@ -89,7 +89,7 @@ body {
   }
 }
 
-/* 768 */
+/* 768px */
 @media (max-width: 48rem) {
   .page-logo {
     top: auto;

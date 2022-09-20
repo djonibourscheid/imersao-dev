@@ -87,6 +87,7 @@
 - [x] Todos as aulas completas
 - [x] Documentar todas as aulas
 - [ ] Fazer os desafios
+- [ ] Responsividade
 
 ## 🛠 Tecnologias
 Foram usadas na construção do projeto:

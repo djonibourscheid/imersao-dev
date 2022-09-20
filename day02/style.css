@@ -85,7 +85,7 @@ body {
   }
 }
 
-/* 768 */
+/* 768px */
 @media (max-width: 48rem) {
   .page-logo {
     top: auto;
@@ -94,5 +94,11 @@ body {
 
   .container {
     width: 85%;
+  }
+
+  .inputNumbers input,
+  .inputNumbers button {
+    width: 100%;
+    max-width: 32rem;
   }
 }

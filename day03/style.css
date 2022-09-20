@@ -41,8 +41,8 @@ body {
   margin-top: .5rem;
 }
 
-.container > *,
-.inputNumbers > label {
+.container>*,
+.inputNumbers>label {
   text-shadow: 0 0 .15rem rgba(0, 0, 0, 0.7);
 }
 
@@ -88,7 +88,7 @@ body {
   }
 }
 
-/* 768 */
+/* 768px */
 @media (max-width: 48rem) {
   .page-logo {
     top: auto;
@@ -97,5 +97,11 @@ body {
 
   .container {
     width: 85%;
+  }
+
+  .inputNumbers input,
+  .inputNumbers button {
+    width: 100%;
+    max-width: 32rem;
   }
 }
