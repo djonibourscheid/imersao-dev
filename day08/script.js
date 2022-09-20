@@ -54,9 +54,12 @@ function showPlayerCard() {
   const playerCardEl = document.getElementById('playerCard');
   playerCardEl.style.backgroundImage = `url(${playerCard.image})`;
 
+  // Para conseguir arrumar a imagem no responsivo
+  playerCardEl.classList.remove("lucas");
+
   // Melhorar o display da imagem, já que os tamanhos das imagens são diferentes
   if (playerCard.name === "Lucas Montando") {
-    playerCardEl.style.background = `url(${playerCard.image}) 3rem 6rem / 30.25rem 22rem no-repeat`;
+    playerCardEl.classList.add("lucas");
   }
 
   // Construção da carta
@@ -78,9 +81,12 @@ function showBotCard() {
   const botCardEl = document.getElementById('botCard');
   botCardEl.style.backgroundImage = `url(${botCard.image})`;
 
+  // Para conseguir arrumar a imagem no responsivo
+  botCardEl.classList.remove("lucas");
+
   // Melhorar o display da imagem, já que os tamanhos das imagens são diferentes
   if (botCard.name === "Lucas Montando") {
-    botCardEl.style.background = `url(${botCard.image}) 3rem 6rem / 30.25rem 22rem no-repeat`;
+    botCardEl.classList.add("lucas");
   }
 
   // Construção da carta
@@ -125,9 +131,9 @@ function play() {
   const resultEl = document.getElementById("result");
 
   if (playerCardValue > botCardValue) {
-    resultEl.innerHTML = "<p class='final-result'>Você venceu!</p>";
+    resultEl.innerHTML = "<p class='final-result winner'>Você venceu!</p>";
   } else if (playerCardValue < botCardValue) {
-    resultEl.innerHTML = "<p class='final-result'>Você perdeu.</p>";
+    resultEl.innerHTML = "<p class='final-result looser'>Você perdeu.</p>";
   } else {
     resultEl.innerHTML = "<p class='final-result'>Empatou.</p>";
   }

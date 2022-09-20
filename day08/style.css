@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
   color: white;
 
-  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /cover no-repeat #000;
+  background: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png") center top /100% no-repeat #000;
 }
 
 .page-logo {
@@ -25,7 +25,7 @@ body {
 
 .container {
   text-align: center;
-  padding: 2rem;
+  padding: 4rem 2rem;
   width: 60%;
   margin: 0 auto;
 }
@@ -64,7 +64,10 @@ form {
 .cardWrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
   width: 100%;
+  min-width: 36rem;
 }
 
 .cardWrapper .card {
@@ -80,6 +83,10 @@ form {
   position: relative;
 
   background: 1.25rem 5rem / 34rem 23rem no-repeat;
+}
+
+.cardWrapper .card.lucas {
+  background: 3rem 6rem / 30.25rem 22rem no-repeat;
 }
 
 .subtitle-card {
@@ -104,7 +111,7 @@ form {
   z-index: 2;
 }
 
-.card:nth-child(2) .status-card div{
+.card:nth-child(2) .status-card div {
   margin-left: 2rem;
 }
 
@@ -122,15 +129,66 @@ form {
   margin-bottom: 3.2rem;
 }
 
+#result {
+  margin: 2rem auto;
+  max-width: 56rem
+}
+
 .final-result {
   font-size: 3.2rem;
   text-transform: uppercase;
   font-weight: bolder;
   padding: 1.6rem;
-  border: 0.2rem solid black;
-  background-color: black;
+  border: 0.2rem solid white;
+  background-color: rgb(191 169 33);
+}
+
+.final-result.winner {
+  background-color: limegreen;
+}
+
+.final-result.looser {
+  background-color: rgb(151, 71, 71);
 }
 
 #btnPlay {
   margin: 0;
+}
+
+
+/* RESPONSIVE */
+/* 1280px */
+@media (max-width: 80rem) {
+  .container {
+    width: 80%;
+    padding: 4rem 0.5rem;
+  }
+}
+
+/* 416px */
+@media (max-width:26rem) {
+  .cardWrapper {
+    min-width: 25.5rem;
+  }
+
+  .cardWrapper .card {
+    width: 25.5rem;
+    height: 39.5rem;
+
+    background: 1.25rem 4.5rem / 24rem 17.5rem no-repeat;
+  }
+
+  .cardWrapper .card.lucas {
+    background: 2rem 4.5rem / 21.5rem 18rem no-repeat;
+  }
+
+  .subtitle-card {
+    top: 2.35rem;
+    left: 2.7rem;
+  }
+
+  .status-card {
+    height: 12rem;
+    margin: 2rem 2.5rem;
+  }
 }
